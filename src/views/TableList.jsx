@@ -54,6 +54,7 @@ this.setState({filtervalue:defaultdate,dropdownValue:'iffcotokio'},
       dropdownValue:this.state.dropdownValue
     }).then(response =>{
       console.log(response['data']['orginalarr']);
+      console.log("ddd"+JSON.stringify(response['data']['ipData']));
       if(response['data']){
     this.setState({results:response['data']['orginalarr']});
     }
